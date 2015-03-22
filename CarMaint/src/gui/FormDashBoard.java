@@ -16,29 +16,29 @@ public class FormDashBoard extends JPanel {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		
 		GroupLayout groupLayout = new GroupLayout(this);
-			groupLayout.setHorizontalGroup(
-				groupLayout.createParallelGroup(Alignment.LEADING)
-					.addGroup(groupLayout.createSequentialGroup()
-						.addContainerGap()
-						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-							.addComponent(tabbedPane, GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
-							.addGroup(groupLayout.createSequentialGroup()
-								.addComponent(btnAddVehicle)
-								.addPreferredGap(ComponentPlacement.RELATED)
-								.addComponent(btnRemoveVehicle)))
-						.addContainerGap())
-			);
-			groupLayout.setVerticalGroup(
-				groupLayout.createParallelGroup(Alignment.LEADING)
-					.addGroup(groupLayout.createSequentialGroup()
-						.addContainerGap()
-						.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+		groupLayout.setHorizontalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createSequentialGroup()
 							.addComponent(btnAddVehicle)
+							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(btnRemoveVehicle))
-						.addGap(30)
-						.addComponent(tabbedPane, GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
-						.addContainerGap())
-			);
+						.addComponent(tabbedPane, GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE))
+					.addContainerGap())
+		);
+		groupLayout.setVerticalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(btnAddVehicle)
+						.addComponent(btnRemoveVehicle))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(tabbedPane, GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+					.addGap(32))
+		);
 		setLayout(groupLayout);	
 		
 		PanelEditVehicle panelNewVehicle = new PanelEditVehicle();
